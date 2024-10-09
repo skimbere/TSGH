@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+
+body {
+    background-color: #bbc994;
+}
+
+/* Start of navbar styling */
+
+.navbar {
+    font-family: Helvetica, sans-serif;
+    background-color: #D2E0C4;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.logo_text {
+    display: flex;
+    align-items: center;
+    font-style: italic;
+}
+
+.logo_pic {
+    width: 8.33%;
+    margin-right: 15px;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dropbtn {
+    padding: 25px;
+    background-color: inherit;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.dropbtn:hover {
+    background-color: #324E1C;
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #8A9A5B;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: right;
+}
+
+.dropdown-content a:hover {
+    background-color: #E5E4E2;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* End of navbar styling */
+
+/* Start main_page styling */
+
+.full-screen-image {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hotel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(50, 78, 28, 0.95);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 80%;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.card {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #bbc994;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/*end of main_page styling*/
+
+/*start of login styling*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.login-box {
+    background-color: rgba(50, 78, 28, 0.95);
+    color: white;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 400px;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+.login {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+
+input[type="text"].form-control,
+input[type="password"].form-control {
+    font-size: 0.8rem;
+    outline: none;
+    width: calc(100%-36px);
+    border: 2px solid #8A9A5B;
+    padding: 12px;
+    border-radius: 2px;
+}
+
+.container button {
+    outline: none;
+    background-color: #8A9A5B;
+    color: white;
+    padding: 16px;
+    display: block;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.container button:hover {
+    background-color: #E5E4E2;
+    color: black;
+}
+
+/*end of login styling*/
+
+/*start of registration styling*/
+
+select {
+    width: 100%;
+    color: grey;
+    border: 2px solid #8A9A5B;
+    padding: 12px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/*end of registration styling*/
+
+/*start of FAQ styling*/
+
+.faq-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.faq-text {
+    flex: 2;
+    background-color: #324E1C;
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
+.faq-img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    max-height: 100vh;
+}
+
+
+@media only screen and (max-width: 1023px) {
+    .faq-section {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        overflow: auto;
+    }
+
+    .faq-text {
+        text-align: center;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    .faq-img {
+        width: 100%;
+        margin-top: 20px;
+        max-height: none;
+    }
+}
+
+/*end of FAQ styling*/
+
+/*start of impressum styling*/
+
+.faq-text {
+    flex: 2;
+    background-color: #324E1C;
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.impressum-text {
+    background-color: #324E1C;
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*end of impressum styling*/
+
+/*start of footer styling*/
+
+footer {
+    background: #8A9A5B;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+/*end of footer styling*/
+
+/*responsiveness*/
+
+[class*="col-"] {
+    box-sizing: border-box;
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    [class*="col-"] {
+        width: 50%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .logo_pic {
+        display: none;
+    }
+
+    .logo_text {
+        padding-left: 15px;
+    }
+}
+
+
+@media only screen and (min-width: 1023px) {
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.67%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+
+    .logo_pic {
+        display: flex;
+    }
+
+}
